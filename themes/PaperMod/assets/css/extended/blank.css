@@ -1,0 +1,25 @@
+/*
+This is just a placeholder blank stylesheet so as to support adding custom styles budled with theme's default styles
+
+Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
+*/
+
+.post-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.entry-cover {
+    overflow: hidden;
+    padding-left: 18px;
+    height: 100%;
+    width: 50%;
+    margin-bottom: unset;
+}
+
+.post-info {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+}

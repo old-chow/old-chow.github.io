@@ -1,0 +1,235 @@
+baseURL: https://blog.oldchow.cn/
+title: Oldchow's Blog
+description: "老周的博客"
+languageCode: zh-cn
+paginate: 10
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+enableEmoji: true
+
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+permalinks:
+  post: "/:title/"
+  # post: "/:year/:month/:day/:title/"
+  
+defaultContentLanguage: zh # 最顶部首先展示的语言页面
+defaultContentLanguageInSubdir: true
+
+
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  keywords: [oldchow, PaperMod]
+  author: oldchow
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+  hideFooter: true
+  ShowWordCounts: false
+  VisitCount: true
+  ShowLastMod: true #显示文章更新时间
+
+  # mainSections:
+  #   - /
+
+  ShowAllPagesInArchive: true
+
+  profileMode:
+        enabled: true
+        title: "<Title>" # optional default will be site title
+        subtitle: "Hi there \U0001F44B \n\n Welcome to my blog \n\n Have fun"
+        imageUrl: "/img/logo.jpg" # optional
+        imageTitle: "my pic" # optional
+        imageWidth: 200 # custom size
+        imageHeight: 200 # custom size
+        # buttons:
+        #     - name: Archive
+        #       url: "/archive"
+        #     - name: Github
+        #       url: "https://github.com/"
+  socialIcons: # optional
+        - name: "twitter"
+          url: "https://twitter.com/oldchow94"
+        - name: "telegram"
+          url: "https://t.me/ericzhou94"
+        - name: "github"
+          url: "https://github.com/old-chow"
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    # favicon: "<link / abs url>"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
+    favicon: "img/cookie.png"
+    favicon16x16: "img/cookie.png"
+    favicon32x32: "img/cookie.png"
+    apple_touch_icon: "img/cookie.png"
+    safari_pinned_tab: "img/cookie.png"
+
+  label:
+    text: "Oldchow"
+    icon: "img/cookie.png"
+    iconHeight: 35
+
+  # home-info mode
+  # homeInfoParams:
+  #   Title: "Hi there \U0001F44B"
+  #   Content: Welcome to my blog
+
+  # socialIcons:
+  #   - name: twitter
+  #     url: "https://twitter.com/"
+  #   - name: stackoverflow
+  #     url: "https://stackoverflow.com"
+  #   - name: github
+  #     url: "https://github.com/"
+
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: tech
+      name: Tech
+      url: /tech
+      weight: 20
+    - identifier: geek
+      name: Geek
+      url: /geek
+      weight: 30
+    - identifier: archives
+      name: All
+      url: /archives
+      weight: 100
+    
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+
+
+
+# languages:
+#     zh:
+#       languageName: "Chinese"
+#       # contentDir: content/english
+#       weight: 1
+#       profileMode:
+#         enabled: false
+        # title: 独立之精神，自由之思想
+        # subtitle: "👏🏼欢迎光临寒舍</br>👇联系方式"
+        # imageUrl: "img/logo.gif"
+        # imageTitle: 
+        # imageWidth: 150
+        # imageHeight: 150
+        # buttons:
+        #   - name: 👨🏻‍💻技术
+        #     url: posts/tech
+        #   - name: 📕阅读
+        #     url: posts/read
+        #   - name: 🏖生活
+        #     url: posts/life
+
+      # menu:
+      #   main:
+          # - identifier: search
+          #   name: 搜索
+          #   url: search
+          #   weight: 1
+          # - identifier: home
+          #   name: 主页
+          #   url: /
+          #   weight: 2
+          # - identifier: tech
+          #   name: 技术
+          #   url: /tech
+          #   weight: 2
+          # - identifier: geek
+          #   name: 折腾不息
+          #   url: /geek
+          #   weight: 3
+          
+          # - identifier: archives
+          #   name: 时间轴
+          #   url: /archives
+          #   weight: 20
+          # - identifier: categories
+          #   name: 🧩分类
+          #   url: categories
+          #   weight: 30
+          # - identifier: tags
+          #   name: 🔖标签
+          #   url: /tags
+          #   weight: 40
+          # - identifier: about
+          #   name: 🙋🏻‍♂️关于
+          #   url: /about
+          #   weight: 50
+          # - identifier: links
+          #   name: 🤝友链
+          #   url: links
+          #   weight: 60
